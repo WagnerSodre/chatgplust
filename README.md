@@ -57,3 +57,15 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Deploy no GitHub Pages
+
+Este repositório está configurado para publicar automaticamente no GitHub Pages usando o GitHub Actions sempre que houver um push na branch `main` ou `master`.
+
+Para ativar:
+1. Vá em **Settings** (Configurações) do seu repositório no GitHub.
+2. No menu lateral esquerdo, clique em **Pages**.
+3. Abaixo de **Build and deployment**, mude a opção **Source** de *Deploy from a branch* para **GitHub Actions**.
+4. O arquivo `.github/workflows/gh-pages.yml` fará o build e o deploy automaticamente nas próximas atualizações.
+
+*Nota: Se o nome do seu repositório não for `chatGPlusT`, você precisará alterar o parâmetro `--base-href /chatGPlusT/` no arquivo `.github/workflows/gh-pages.yml` para coincidir com o nome do seu repositório.*
